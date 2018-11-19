@@ -1,41 +1,174 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/JavaScript/app.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+
+    <title>Hello, world!</title>
 </head>
-<header>The Trivia Game</header>
 
 <body>
 
-    <div class="instructions">
-        <h1>Instructions</h1>
-            <p>This is how you play the game</p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <div class="Container">
+        <div id="timerButton">
+            <button type="button" class="btn btn-primary btn-lg">00:00</button>
+        </div>
+        <div class="question" id="question1">
+            <p>Who is Batman?</p>
+        </div>
+        <div class="answers" id="answers1">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">A) Clark Kent</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">B) Tony Stark</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">C) Bruce Wayne</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox3">D) Sofia Vergara</label>
+            </div>
+        </div>
+
+        <br>
+        <div class="question" id="question2">
+            <p>Which of the following is NOT an Arnold Schwarznegger Movie?</p>
+        </div>
+        <div class="answers" id="answers2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Terminator</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Rambo</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Predator</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox3">Kindergarten Cop</label>
+            </div>
+        </div>
+        <br>
+        <div class="question" id="question3">
+            <p>In the first episode of Game of Thrones, how many Dire Wolf puppies does Jon Sno find?</p>
+        </div>
+        <div class="answers" id="answers3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">0</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">5</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox3">6</label>
+            </div>
+        </div>
+        <br>
+        <div class="question" id="question4">
+            <p>In Dukes of Hazzard, how do the Duke boys make a living?</p>
+        </div>
+        <div class="answers" id="answers4">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Street Racing</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Selling Moonshine</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">A lemonade stand</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Bouncers at a Honky Tonk</label>
+            </div>
+        </div>
+        <br>
+
+        <div class="question" id="question5">
+            <p>Which Hollywood director spent $1,000,000 of his own movies to shoot real arrows for a movie scene</p>
+        </div>
+        <div class="answers" id="answers5">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">James Cameron</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Steven Speilberg</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Mel Gibson</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Ridley Scott</label>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="question" id="question6">
+            <p>What famous Hollywood actor got his start doing western movies in Italian?</p>
+        </div>
+        <div class="answers" id="answers6">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">John Wayne</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Clint Eastwood</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Kurt Russel</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Tony Danza</label>
+            </div>
+        </div>
     </div>
-<div class="container">
-    <div class="timer">00:00</div>
-    <button id="button">Start the Game</button>
-    <div class="questions">
-        <div class="questionOne">Here is question 1</div>
-        <div class="questionTwo">Here is question 2</div>
-        <div class="questionThree">Here is question 3</div>
-        <div class="questionFour">Here is question 4</div>
-        <div class="questionFive">Here is question 5</div>
-        <div class="questionSix">Here is question 6</div>
-        <div class="questionSeven">Here is question7</div>
-    </div>
 
-    <div class="winLose"></div>
-
-
-</div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/JavaScript/app.js"></script>
 </body>
 
 </html>

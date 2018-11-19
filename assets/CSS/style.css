@@ -1,0 +1,33 @@
+#timerButton{
+    text-align: center;
+    font-size: 40px;
+}
+
+.body{
+background-color: coral;
+}
+
+
+
+.question{
+
+text-align: center;
+font-size: 30px;
+background-color: blue;
+padding: 20px;
+margin: 0px;
+
+}
+
+.answers{
+text-align: center;
+background-color: coral;
+padding: 20px;
+margin: 0px;
+}
+
+.container{
+    float: right;
+    text-align: center;
+    background-color: coral;
+}

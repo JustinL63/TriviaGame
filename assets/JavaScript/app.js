@@ -2,21 +2,16 @@ var timer = 30;
 var intervalId;
 var timerRunning = false;
 var winnerLoser;
-var questions = [
-    {
-        question: "Who is Batman?",
-        answer: "Bruce Wayne"
 
-    },
-    {
-        question: "What was Luke Skywalker before he was a Jedi?",
-        answer: "Moisture Farmer"
-    }
-]
 //need a function to take time off the timer
 function countdown() {
-   (timer === timer--);
-}
+  var timeLeft = (timer == timer--);
+
+setInterval(function(){countdown,1000});
+
+console.log(timeLeft);
+};
+
 
 function timerStart() {
    //this function needs to begin the timer countdown 
@@ -25,13 +20,15 @@ function timerStart() {
     //   clearInterval(intervalId);
      console.log(timer);
      
-}
-$("#button").on("click", timerStart(timer))
-console.log(timer);
+}//I need this function to being the countdown on a button push
+$("#timerButton").on("click", countdown(timer))
+;
+
 
 
 function questions() {
     //this function needs to see if the answers picked are correct
+
 }
 
 function timesup() {
