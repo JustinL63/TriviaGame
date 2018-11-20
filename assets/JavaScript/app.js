@@ -13,7 +13,6 @@ function countdown() {
     console.log(timeLeft);
 };
 
-
 function timerStart() {
     //this function needs to begin the timer countdown 
 
@@ -25,6 +24,7 @@ function timerStart() {
 $("#timerButton").on("click", countdown(timer));
 
 function questionsCheck(questions, value) {
+    //this function needs to check the question against the button selected to see if the answer is correct
     if ("#question1" === value3) {
         score++;
     }
