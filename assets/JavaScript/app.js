@@ -51,5 +51,9 @@ $("#submit").on("click").questionsCheck();
 
 
 function timesup() {
+    if (timer === 0) {
+        questionsCheck();
+        alert("Game over")        
+    }
     //this needs to check the answers at the end of the time and declare a winner or loser
 }
